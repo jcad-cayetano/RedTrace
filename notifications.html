@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts & Notifications | Red Trace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="notifications-page help-page">
+
+    <header id="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px; color: inherit;">
+                <img src="mapua-logo.png" alt="Mapúa Logo"> 
+                <span>Mapúa RedTrace</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="help.html">Help/Policies</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-red" style="text-decoration: none;">Sign-In/Register</a>
+                <div class="user-icon"><i class="fa-regular fa-user"></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="notifications-container">
+        <section class="notif-header">
+            <h1>Alerts & Notifications</h1>
+            <p>Manage and send notifications to donors about drives, emergencies, and updates</p>
+        </section>
+
+        <div class="notif-stats-grid">
+            <div class="notif-stat-card">
+                <div class="icon-box red-light"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div class="stat-info"><span class="count">2</span><span class="label">Urgent Alerts</span></div>
+            </div>
+            <div class="notif-stat-card">
+                <div class="icon-box orange-light"><i class="fa-solid fa-calendar-day"></i></div>
+                <div class="stat-info"><span class="count">2</span><span class="label">Event Notices</span></div>
+            </div>
+            <div class="notif-stat-card">
+                <div class="icon-box green-light"><i class="fa-solid fa-bell"></i></div>
+                <div class="stat-info"><span class="count">1</span><span class="label">Reminders</span></div>
+            </div>
+            <div class="notif-stat-card">
+                <div class="icon-box blue-light"><i class="fa-solid fa-paper-plane"></i></div>
+                <div class="stat-info"><span class="count">6</span><span class="label">Total Sent</span></div>
+            </div>
+        </div>
+
+        <div class="notif-actions-bar">
+            <div class="filter-pills">
+                <button class="pill active" data-filter="all">All Notifications</button>
+                <button class="pill" data-filter="urgent">Urgent</button>
+                <button class="pill" data-filter="event">Events</button>
+                <button class="pill" data-filter="reminder">Reminders</button>
+                <button class="pill" data-filter="info">Info</button>
+            </div>
+            <button class="btn btn-red"><i class="fa-solid fa-plus"></i> Send New Notification</button>
+        </div>
+
+        <div class="notif-list" id="notif-list">
+            
+            <div class="notif-card urgent">
+                <div class="icon-box red-light"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div class="card-content">
+                    <div class="card-title-row">
+                        <h3>Critical Blood Shortage - A- Type</h3>
+                        <div class="badges">
+                            <span class="badge high">HIGH</span>
+                            <span class="badge status">Sent</span>
+                        </div>
+                    </div>
+                    <p>We are experiencing a critical shortage of A- blood type. Your donation can save lives.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-calendar"></i> 2025-12-15</span>
+                        <span><i class="fa-solid fa-users"></i> All A- Donors</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="icon-btn" title="Edit"><i class="fa-solid fa-pen"></i></button>
+                    <button class="icon-btn" title="Delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+
+            <div class="notif-card urgent">
+                <div class="icon-box red-light"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div class="card-content">
+                    <div class="card-title-row">
+                        <h3>Emergency Blood Request - O- Universal Donor</h3>
+                        <div class="badges">
+                            <span class="badge high">HIGH</span>
+                            <span class="badge status">Sent</span>
+                        </div>
+                    </div>
+                    <p>Emergency situation requires immediate O- blood donations. Please contact us if you can donate within 24 hours.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-calendar"></i> 2025-12-12</span>
+                        <span><i class="fa-solid fa-users"></i> All O- Donors</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="icon-btn" title="Edit"><i class="fa-solid fa-pen"></i></button>
+                    <button class="icon-btn" title="Delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+
+            <div class="notif-card event">
+                <div class="icon-box orange-light"><i class="fa-solid fa-calendar-day"></i></div>
+                <div class="card-content">
+                    <div class="card-title-row">
+                        <h3>Upcoming Blood Drive - January 2026</h3>
+                        <div class="badges">
+                            <span class="badge medium">MEDIUM</span>
+                            <span class="badge status">Sent</span>
+                        </div>
+                    </div>
+                    <p>Join us for our monthly blood donation drive on January 25th, 2026 at the University Medical Center.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-calendar"></i> 2025-12-10</span>
+                        <span><i class="fa-solid fa-users"></i> All Active Donors</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="icon-btn" title="Edit"><i class="fa-solid fa-pen"></i></button>
+                    <button class="icon-btn" title="Delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+
+            <div class="notif-card reminder">
+                <div class="icon-box green-light"><i class="fa-solid fa-bell"></i></div>
+                <div class="card-content">
+                    <div class="card-title-row">
+                        <h3>Appointment Reminder</h3>
+                        <div class="badges">
+                            <span class="badge medium">MEDIUM</span>
+                            <span class="badge status">Sent</span>
+                        </div>
+                    </div>
+                    <p>This is a reminder for your upcoming blood donation appointment scheduled for tomorrow at 10:00 AM.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-calendar"></i> 2025-12-14</span>
+                        <span><i class="fa-solid fa-users"></i> Scheduled Donors</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="icon-btn" title="Edit"><i class="fa-solid fa-pen"></i></button>
+                    <button class="icon-btn" title="Delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+
+            <div class="notif-card info">
+                <div class="icon-box blue-light"><i class="fa-solid fa-circle-info"></i></div>
+                <div class="card-content">
+                    <div class="card-title-row">
+                        <h3>Thank You for Your Donation</h3>
+                        <div class="badges">
+                            <span class="badge low">LOW</span>
+                            <span class="badge status">Sent</span>
+                        </div>
+                    </div>
+                    <p>Thank you for your recent blood donation! Your contribution has helped save up to 3 lives.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-calendar"></i> 2025-12-11</span>
+                        <span><i class="fa-solid fa-users"></i> Recent Donors</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="icon-btn" title="Edit"><i class="fa-solid fa-pen"></i></button>
+                    <button class="icon-btn" title="Delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-card">
+        <div class="modal-header">
+            <h2>Send New Notification</h2>
+            <button class="close-btn" id="closeModal">&times;</button>
+        </div>
+        
+        <form id="notificationForm">
+            <div class="form-group">
+                <label>Notification Type *</label>
+                <select required>
+                    <option value="information">Information</option>
+                    <option value="urgent">Urgent Alert</option>
+                    <option value="event">Event Notice</option>
+                    <option value="reminder">Reminder</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Title *</label>
+                <input type="text" placeholder="Enter notification title" required>
+            </div>
+
+            <div class="form-group">
+                <label>Message *</label>
+                <textarea placeholder="Enter notification message" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Priority *</label>
+                <select required>
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Recipients *</label>
+                <select required>
+                    <option value="all">All Donors</option>
+                    <option value="active">Active Donors Only</option>
+                    <option value="o-neg">O- Blood Type</option>
+                    <option value="a-neg">A- Blood Type</option>
+                    <option value="b-neg">B- Blood Type</option>
+                    <option value="ab-neg">AB- Blood Type</option>
+                    <option value="scheduled">Scheduled Donors</option>
+                </select>
+            </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-red">
+                    <i class="fa-solid fa-paper-plane"></i> Send Notification
+                </button>
+                <button type="button" class="btn btn-cancel" id="cancelModal">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="mapua-logo.png" alt="Mapúa Logo"> 
+                    <span>RedTrace</span>
+                </div>
+                <p>Empowering our university community to save lives through efficient blood donation management and transparent tracking systems.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="#">Donate Now</a>
+                <a href="#">Dashboard</a>
+                <a href="notifications.html">Notifications</a>
+                <a href="help.html">Help/Policies</a>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <a href="#">Donation Guidelines</a>
+                <a href="#">Eligibility Criteria</a>
+                <a href="#">FAQs</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> University Medical Center Room 201, Main Campus</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fa-solid fa-envelope"></i> info@redtrace.edu</p>
+                <p><i class="fa-solid fa-clock"></i> Mon-Fri: 9AM - 5PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RedTrace. All rights reserved.</p>
+            <p>Powered by VSCode</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

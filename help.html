@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Policies | Red Trace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="help-page">
+
+    <header id="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px; color: inherit;">
+                <img src="mapua-logo.png" alt="Mapúa Logo"> 
+                <span>Mapúa RedTrace</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="help.html">Help/Policies</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-red" style="text-decoration: none;">Sign-In/Register</a>
+                <div class="user-icon"><i class="fa-regular fa-user"></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="help-hero">
+        <div class="container">
+            <div class="help-badge"><i class="fa-solid fa-circle-question"></i> Help Center</div>
+            <h1>Help & Policies</h1>
+            <p>Find answers to common questions and learn about our policies and guidelines.</p>
+            
+            <div class="tab-container">
+                <div class="tab-pill">
+                    <button class="tab-btn active" onclick="switchTab('faqs')">
+                        <i class="fa-solid fa-comment-dots"></i> FAQs
+                    </button>
+                    <button class="tab-btn" onclick="switchTab('policies')">
+                        <i class="far fa-file-alt"></i> Policies
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="faq-header">
+                <i class="fas fa-comment-medical"></i> 
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Who can donate blood?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Generally, you can donate blood if you are at least 18-65 years old (16-17 with written consent from parent or guardian), weight at least 110 pounds (50 kilograms), and are in good health. You must not have donated blood in the last 56 days.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How often can I donate blood?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>You can generally donate blood every 3 months.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What should I do before donating?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Get a good night's sleep, eat a healthy meal, drink plenty of water, and avoid fatty foods. Bring a valid ID and wear comfortable clothing with sleeves that can be raised above the elbow.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How long does the donation process take?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>The entire process from registration to recover takes about 30-60 minutes. The actual blood extraction only takes about 8-10 minutes.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Is blood donation safe?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, donating blood is very safe. All equipment is sterile, only used once, and then disposed of. You cannot get any disease from donating blood.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What happens to my blood after donation?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Your blood is tested, processed, and separated into components (red blood cells, platelets, plasma). It is then stored and distributed to hospitals where it can help save up to 3 lives.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Can I donate if I have a tattoo or piercing?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, you can donate blood in the Philippines with tattoos or piercings, but you must wait 12 months from the date of the procedure.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What if I feel unwell after donating?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Feeling unwell after donating is relatively common and usually temporary. Rest and drink plenty of fluids. If you feel faint, lie down with your feet elevated. Avoid strenuous activity for 24 hours. Contact us or seek medical attention if symptoms persist.</p>
+                    </div>
+                </div>
+            </div> </div> </section>
+
+    <section class="policies-section" style="display: none;">
+    <div class="policy-container">
+        <div class="policy-card">
+            <div class="policy-icon-box"><i class="fas fa-exclamation-circle"></i></div>
+            <div class="policy-text">
+                <h3>Privacy Policy</h3>
+                <p>We are committed to protecting your personal information. All donor data is encrypted and stored securely. We never share your information with third parties without your explicit consent. Your medical information is kept strictly confidential and is only accessible to authorized medical personnel.</p>
+            </div>
+        </div>
+
+        <div class="policy-card">
+            <div class="policy-icon-box"><i class="fa-solid fa-user-check"></i></div>
+            <div class="policy-text">
+                <h3>Eligibility Guidelines</h3>
+                <p>To donate blood, you must be at least 18 years old (16-17 with parent/guardian consent), weigh at least 110 lbs (50 kilograms), and be in good general health. Certain medical conditions, medications, or recent travel may temporarily defer your eligibility. A health screening is conducted before each donation to ensure your safety and the safety of blood recipients.</p>
+            </div>
+        </div>
+
+        <div class="policy-card">
+            <div class="policy-icon-box"><i class="fa-solid fa-database"></i></div>
+            <div class="policy-text">
+                <h3>Data Retention Policy</h3>
+                <p>Donor records are maintained for a minimum of 10 years as required by health regulations. You may request access to your personal data or request deletion of non-essential information at any time. Donation history is retained to ensure proper tracking and to maintain blood supply safety.</p>
+            </div>
+        </div>
+
+        <div class="policy-card">
+            <div class="policy-icon-box"><i class="fa-solid fa-file-invoice"></i></div>
+            <div class="policy-text">
+                <h3>Terms of Service</h3>
+                <p>By registering as a donor, you agree to provide accurate information and follow all donation guidelines. You understand that blood donation is voluntary and you may withdraw consent at any time. RedTrace reserves the right to defer donors who do not meet eligibility criteria.</p>
+            </div>
+        </div>
+
+        <div class="policy-card">
+            <div class="policy-icon-box"><i class="fa-solid fa-heart-pulse"></i></div>
+            <div class="policy-text">
+                <h3>Safety Standards</h3>
+                <p>All blood collection follows strict FDA guidelines and AABB standards. Equipment is sterile and single-use. Our staff are trained professionals who prioritize donor and recipient safety. All donated blood undergoes rigorous testing before distribution.</p>
+            </div>
+        </div>
+
+        <div class="policy-card">
+            <div class="policy-icon-box"><i class="fa-solid fa-users"></i></div>
+            <div class="policy-text">
+                <h3>Non-Discrimination Policy</h3>
+                <p>RedTrace welcomes all eligible donors regardless of race, ethnicity, gender, religion, or background. Eligibility is determined solely by FDA guidelines and medical criteria. We are committed to creating an inclusive environment for all donors.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="questions-banner">
+        <div class="banner-content">
+            <div class="text">
+                <h2>Still have questions?</h2>
+                <p>Our team is here to help you with any concerns.</p>
+            </div>
+            <div class="banner-btns">
+                <button class="btn btn-white"><i class="fa-solid fa-envelope"></i> Email Us</button>
+                <button class="btn btn-outline"><i class="fa-solid fa-phone"></i> Call Us</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="mapua-logo.png" alt="Mapúa Logo"> 
+                    <span>RedTrace</span>
+                </div>
+                <p>Empowering our university community to save lives through efficient blood donation management and transparent tracking systems.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="#">Donate Now</a>
+                <a href="#">Dashboard</a>
+                <a href="#">Notifications</a>
+                <a href="help.html">Help/Policies</a>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <a href="#">Donation Guidelines</a>
+                <a href="#">Eligibility Criteria</a>
+                <a href="#">FAQs</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> University Medical Center Room 201, Main Campus</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fa-solid fa-envelope"></i> info@redtrace.edu</p>
+                <p><i class="fa-solid fa-clock"></i> Mon-Fri: 9AM - 5PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RedTrace. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

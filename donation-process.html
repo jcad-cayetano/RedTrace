@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Process | Mapúa RedTrace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="help-page"> 
+    <header id="main-header" class="scrolled"> 
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="mapua-logo.png" alt="Mapúa Logo"> 
+                    <span>Mapúa RedTrace</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="help.html">Help/Policies</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-red" style="text-decoration: none;">Sign-In/Register</a>
+                <div class="user-icon"><i class="fa-regular fa-user"></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="process-container">
+        <div class="stepper">
+            <div class="step active" id="step-1-node">
+                <div class="step-num">1</div>
+                <span class="step-text">Self-Assessment</span>
+            </div>
+            <div class="step-line" id="line-1"></div>
+            <div class="step" id="step-2-node">
+                <div class="step-num">2</div>
+                <span class="step-text">Physical Screening</span>
+            </div>
+            <div class="step-line" id="line-2"></div>
+            <div class="step" id="step-3-node">
+                <div class="step-num">3</div>
+                <span class="step-text">Confirm Donation</span>
+            </div>
+            <div class="step-line" id="line-3"></div>
+            <div class="step" id="step-4-node">
+                <div class="step-num">4</div>
+                <span class="step-text">Complete</span>
+            </div>
+        </div>
+
+        <section id="section-assessment">
+            <div class="assessment-card">
+                <div class="assessment-header">
+                    <div class="icon-box-pink"><i class="fa-solid fa-clipboard-list"></i></div>
+                    <div class="header-text">
+                        <h1>Self-Assessment Screening</h1>
+                        <p>Please answer all questions honestly to determine your eligibility</p>
+                    </div>
+                </div>
+
+                <div id="questions-list">
+                    <div class="q-row" data-required="Yes">
+                        <div class="q-content">
+                            <span class="q-tag">General Health</span>
+                            <p>1. Are you feeling healthy and well today?</p>
+                        </div>
+                        <div class="q-btns">
+                            <button class="choice-btn yes" onclick="answer(this, 'Yes')">Yes</button>
+                            <button class="choice-btn no" onclick="answer(this, 'No')">No</button>
+                        </div>
+                    </div>
+                    <div class="q-row" data-required="No"><div class="q-content"><span class="q-tag">General Health</span><p>2. Have you had any cold, flu, or fever in the past 14 days?</p></div><div class="q-btns"><button class="choice-btn yes" onclick="answer(this, 'Yes')">Yes</button><button class="choice-btn no" onclick="answer(this, 'No')">No</button></div></div>
+                    <div class="q-row" data-required="No"><div class="q-content"><span class="q-tag">Medications</span><p>3. Have you taken any antibiotics in the past 14 days?</p></div><div class="q-btns"><button class="choice-btn yes" onclick="answer(this, 'Yes')">Yes</button><button class="choice-btn no" onclick="answer(this, 'No')">No</button></div></div>
+                    <div class="q-row" data-required="No"><div class="q-content"><span class="q-tag">Medications</span><p>4. Have you taken aspirin or any blood thinners in the past 48 hours?</p></div><div class="q-btns"><button class="choice-btn yes" onclick="answer(this, 'Yes')">Yes</button><button class="choice-btn no" onclick="answer(this, 'No')">No</button></div></div>
+                    <div class="q-row" data-required="No"><div class="q-content"><span class="q-tag">Risk Factors</span><p>5. Have you had any tattoos, piercings, or acupuncture in the past 12 months?</p></div><div class="q-btns"><button class="choice-btn yes" onclick="answer(this, 'Yes')">Yes</button><button class="choice-btn no" onclick="answer(this, 'No')">No</button></div></div>
+                    <div class="q-row" data-required="No"><div class="q-content"><span class="q-tag">Risk Factors</span><p>6. Have you traveled outside the country in the past 12 months?</p></div><div class="q-btns"><button class="choice-btn yes" onclick="answer(this, 'Yes')">Yes</button><button class="choice-btn no" onclick="answer(this, 'No')">No</button></div></div>
+                    <div class="q-row" data-required="No"><div class="q-content"><span class="q-tag">Medical Procedures</span><p>7. Have you had any dental work or surgery in the past 72 hours?</p></div><div class="q-btns"><button class="choice-btn yes" onclick="answer(this, 'Yes')">Yes</button><button class="choice-btn no" onclick="answer(this, 'No')">No</button></div></div>
+                    <div class="q-row" data-required="No"><div class="q-content"><span class="q-tag">Medical Procedures</span><p>8. Have you received any vaccinations in the past 4 weeks?</p></div><div class="q-btns"><button class="choice-btn yes" onclick="answer(this, 'Yes')">Yes</button><button class="choice-btn no" onclick="answer(this, 'No')">No</button></div></div>
+                    <div class="q-row" data-required="No"><div class="q-content"><span class="q-tag">Donation History</span><p>9. Have you donated blood in the past 56 days (8 weeks)?</p></div><div class="q-btns"><button class="choice-btn yes" onclick="answer(this, 'Yes')">Yes</button><button class="choice-btn no" onclick="answer(this, 'No')">No</button></div></div>
+                    <div class="q-row" data-required="Yes"><div class="q-content"><span class="q-tag">Readiness</span><p>10. Did you get at least 6 hours of sleep last night?</p></div><div class="q-btns"><button class="choice-btn yes" onclick="answer(this, 'Yes')">Yes</button><button class="choice-btn no" onclick="answer(this, 'No')">No</button></div></div>
+                    <div class="q-row" data-required="Yes"><div class="q-content"><span class="q-tag">Readiness</span><p>11. Have you eaten a meal in the past 4 hours?</p></div><div class="q-btns"><button class="choice-btn yes" onclick="answer(this, 'Yes')">Yes</button><button class="choice-btn no" onclick="answer(this, 'No')">No</button></div></div>
+                    <div class="q-row" data-required="No"><div class="q-content"><span class="q-tag">Readiness</span><p>12. Have you consumed alcohol in the past 24 hours?</p></div><div class="q-btns"><button class="choice-btn yes" onclick="answer(this, 'Yes')">Yes</button><button class="choice-btn no" onclick="answer(this, 'No')">No</button></div></div>
+                </div>
+
+                <div class="assessment-footer">
+                    <p id="progress-text">0 of 12 questions answered</p> 
+                    <button id="continue-btn" class="btn-red-fade" disabled onclick="checkEligibility()">
+                        Continue <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-screening" style="display: none;">
+            <div class="assessment-card">
+                <div class="assessment-header">
+                    <div class="icon-box-pink"><i class="fa-solid fa-stethoscope"></i></div>
+                    <div class="header-text">
+                        <h1>Physical Screening</h1>
+                        <p>Hospital staff will check your vital signs</p>
+                    </div>
+                </div>
+
+                <div class="info-alert-blue">
+                    <div class="icon-circle-blue"><i class="fa-solid fa-hourglass-half"></i></div>
+                    <div class="alert-content">
+                        <strong>Staff Physical Examination</strong>
+                        <p>A medical staff member will now perform a brief physical examination to check your vital signs and ensure you're ready to donate safely.</p>
+                    </div>
+                </div>
+
+                <h3>Vital Signs to be Checked</h3>
+                <div class="vitals-grid">
+                    <div class="vital-item">
+                        <div class="vital-icon pink-light"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <div class="vital-info"><span>Blood Pressure</span><p>Pending...</p></div>
+                    </div>
+                    <div class="vital-item">
+                        <div class="vital-icon pink-light"><i class="fa-solid fa-wave-square"></i></div>
+                        <div class="vital-info"><span>Pulse Rate</span><p>Pending...</p></div>
+                    </div>
+                    <div class="vital-item">
+                        <div class="vital-icon pink-light"><i class="fa-solid fa-temperature-half"></i></div>
+                        <div class="vital-info"><span>Temperature</span><p>Pending...</p></div>
+                    </div>
+                    <div class="vital-item">
+                        <div class="vital-icon pink-light"><i class="fa-solid fa-droplet"></i></div>
+                        <div class="vital-info"><span>Hemoglobin Level</span><p>Pending...</p></div>
+                    </div>
+                    <div class="vital-item full-width">
+                        <div class="vital-icon pink-light"><i class="fa-solid fa-weight-scale"></i></div>
+                        <div class="vital-info"><span>Weight</span><p>Pending...</p></div>
+                    </div>
+                </div>
+
+                <div class="reason-box" style="text-align: left;">
+                    <strong style="color: #b45309;"><i class="fa-solid fa-circle-info"></i> What to Expect</strong>
+                    <ul class="expect-list">
+                        <li>Blood pressure will be measured using a cuff on your arm</li>
+                        <li>Pulse rate will be checked at your wrist</li>
+                        <li>Temperature will be taken using a thermometer</li>
+                        <li>A small finger prick will test your hemoglobin level</li>
+                        <li>You will be weighed to ensure safe donation volume</li>
+                    </ul>
+                </div>
+
+                <div class="assessment-footer">
+                    <button class="btn btn-white" onclick="changeStep(1)"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                    <button class="btn btn-red">Begin Physical Screening <i class="fa-solid fa-stethoscope"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="loading-overlay" class="modal-overlay">
+        <div class="loading-card"><div class="spinner"></div><h2>Checking Eligibility</h2><p>Please wait...</p></div>
+    </div>
+
+    <div id="ineligible-modal" class="modal-overlay">
+        <div class="ineligible-card">
+            <div class="warning-circle"><i class="fa-solid fa-exclamation"></i></div>
+            <h2>Not Eligible to Donate</h2>
+            <div class="reason-box"><strong>Reason:</strong> <span id="failure-reason"></span></div>
+            <p class="disclaimer">Please consult with a healthcare professional or try again later. Thank you!</p>
+            <button class="btn btn-red btn-full" onclick="location.href='index.html'">Return to Dashboard</button>
+        </div>
+    </div>
+
+    <div id="eligible-modal" class="modal-overlay">
+        <div class="eligible-card">
+            <div class="success-circle"><i class="fa-solid fa-circle-check"></i></div>
+            <h2>You are Eligible!</h2>
+            <div class="success-box"><strong>Status:</strong> Ready for Physical Screening</div>
+            <p class="next-steps">Proceed to University Medical Center Room 201 for your physical exam.</p>
+            <button class="btn btn-red btn-full" onclick="changeStep(2)">Proceed to Step 2 <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo"><img src="mapua-logo.png" alt="Mapúa Logo"> <span>RedTrace</span></div>
+                <p>Empowering our university community to save lives through efficient blood donation management.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="help.html">Help/Policies</a>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 RedTrace. All rights reserved.</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
